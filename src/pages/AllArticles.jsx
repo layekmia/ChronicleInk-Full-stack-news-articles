@@ -23,7 +23,7 @@ const fetchArticles = async ({ queryKey }) => {
   const tagQuery = selectedTags.join(",");
   const query = `search=${search}&publisher=${publisher}&tags=${tagQuery}`;
   const res = await axios.get(
-    `http://localhost:3000/web/api/articles/approved?${query}`
+    `https://chronicle-ink-full-stack-server.vercel.app/web/api/articles/approved?${query}`
   );
   return res.data;
 };

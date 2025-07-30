@@ -15,7 +15,7 @@ export default function SocialLogin() {
       const token = await user.getIdToken();
 
       const res = await axios.get(
-        `http://localhost:3000/web/api/users/${user.uid}/check-exist`
+        `https://chronicle-ink-full-stack-server.vercel.app/web/api/users/${user.uid}/check-exist`
       );
 
       const userExists = res.data.exists;
@@ -31,7 +31,7 @@ export default function SocialLogin() {
         };
 
         await axios.post(
-          "http://localhost:3000/web/api/users/register",
+          "https://chronicle-ink-full-stack-server.vercel.app/web/api/users/register",
           userInfo
         );
       } else {
@@ -39,7 +39,7 @@ export default function SocialLogin() {
       }
 
       const { data } = await axios.post(
-        "http://localhost:3000/web/api/auth",
+        "https://chronicle-ink-full-stack-server.vercel.app/web/api/auth",
         {},
         {
           headers: { Authorization: `Bearer ${token}` },

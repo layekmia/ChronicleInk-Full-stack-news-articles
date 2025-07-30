@@ -2,8 +2,8 @@ import axios from "axios";
 
 const axiosInstance = axios.create({
   baseURL: import.meta.env.DEV
-    ? "http://localhost:3000/web/api"
-    : "http://localhost:3000/web/api",
+    ? "https://chronicle-ink-full-stack-server.vercel.app/web/api"
+    : "https://chronicle-ink-full-stack-server.vercel.app/web/api",
 });
 
 axiosInstance.interceptors.request.use(

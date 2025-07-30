@@ -39,7 +39,7 @@ const Register = () => {
       // Redirect to home after successful registration
       try {
         await axios.post(
-          "http://localhost:3000/web/api/users/register",
+          "https://chronicle-ink-full-stack-server.vercel.app/web/api/users/register",
           userData
         );
       } catch (erorr) {
@@ -52,7 +52,7 @@ const Register = () => {
 
       try {
         const jwtRes = await axios.post(
-          "http://localhost:3000/web/api/auth",
+          "https://chronicle-ink-full-stack-server.vercel.app/web/api/auth",
           {},
           {
             headers: {

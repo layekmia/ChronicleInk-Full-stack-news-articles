@@ -29,7 +29,7 @@ const TrendingSlider = () => {
     return views?.toString() || "0";
   };
 
-  const CustomArrow = ({ className, style, onClick, direction }) => (
+  const CustomArrow = ({ onClick, direction }) => (
     <div
       className={`absolute top-1/2 transform -translate-y-1/2 z-20 cursor-pointer transition-all duration-500 hover:scale-110 ${
         direction === "next" ? "right-6" : "left-6"
