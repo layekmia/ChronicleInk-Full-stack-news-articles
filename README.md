@@ -4,8 +4,8 @@ A modern, full-featured news platform built with React, Vite, Firebase, and Node
 
 ## Live Demo
 
-- **Client:** [https://chronicle-ink-full-stack-news-platf.vercel.app/](https://chronicle-ink-full-stack-news-platf.vercel.app/)
-- **Repository:** [MRaysa/ChronicleInk-FullStack-News-Platform](https://github.com/MRaysa/ChronicleInk-FullStack-News-Platform)
+- **Client:** [https://chronicleink.netlify.app/](https://chronicleink.netlify.app/)
+- **Repository:** [https://github.com/layekmia/ChronicleInk-Full-stack-Server.git](https://github.com/layekmia/ChronicleInk-Full-stack-Server.git)
 
 ---
 
